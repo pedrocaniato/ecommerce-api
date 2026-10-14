@@ -3,7 +3,7 @@ const router = express.Router();
 const upload = require('../config/multer')
 const controller = require('../controllers/produtos.controller')
 const autenticar = require('../middleware/auth.middleware')
-const validar = require('../middlewares/validate.middleware');
+const validar = require('../middleware/validation.middleware');
 const { produtoSchema } = require('../schemas/produto.schema');
 
 router.post(
